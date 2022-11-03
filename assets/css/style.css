@@ -1,0 +1,270 @@
+.main-wrapper {
+    min-height: 100vh;
+    max-width: 100vw;
+    background-color: var(--secondary-soft);
+}
+.side-menu-open .sidebar-wrap .left {
+    left: 0px;
+}
+[dir="rtl"] .side-menu-open .sidebar-wrap .left {
+    right: 0;
+}
+/*siebar nav*/
+.sidebar-overlay {
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 98;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0.3s ease, opacity 0.3s ease;
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+.sidebar.left {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -265px;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 99;
+    background-color: #252544;
+    width: 265px;
+    -webkit-transition: left 0.3s ease;
+    transition: left 0.3s ease;
+}
+[dir="rtl"] .sidebar.left {
+    left: auto;
+    right: -265px;
+    -webkit-transition: right 0.3s ease;
+    transition: right 0.3s ease;
+}
+.side-menu-open .sidebar-wrap .left {
+    left: 0px;
+}
+[dir="rtl"] .side-menu-open .sidebar-wrap .left {
+    right: 0;
+}
+@media (max-width: 1199.98px) {
+    .side-menu-open .sidebar-overlay {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+
+/* Scroll Bar */
+.main-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    background: #1e1e2d;
+    border-radius: 3px;
+}
+.main-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.main-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+}
+.main-scrollbar {
+    scrollbar-color: rgba(255, 255, 255, 0.2);
+    scrollbar-width: thin;
+}
+
+.main-scrollbar-light::-webkit-scrollbar,
+.uppy-Dashboard-files::-webkit-scrollbar,
+.bootstrap-select .dropdown-menu .inner::-webkit-scrollbar {
+    width: 4px;
+    background: rgba(24, 28, 41, 0.08);
+    border-radius: 3px;
+}
+.main-scrollbar-light::-webkit-scrollbar-track,
+.uppy-Dashboard-files::-webkit-scrollbar-track,
+.bootstrap-select .dropdown-menu .inner::-webkit-scrollbar-track {
+    background: transparent;
+}
+.main-scrollbar-light::-webkit-scrollbar-thumb,
+.uppy-Dashboard-files::-webkit-scrollbar-thumb,
+.bootstrap-select .dropdown-menu .inner::-webkit-scrollbar-thumb {
+    background: rgba(24, 28, 41, 0.1);
+    border-radius: 3px;
+}
+.main-scrollbar-light,
+.uppy-Dashboard-files,
+.bootstrap-select .dropdown-menu .inner {
+    scrollbar-color: rgba(24, 28, 41, 0.08);
+    scrollbar-width: thin;
+}
+/* Scroll Bar End */
+
+
+.side-nav-list .side-nav-link:hover,
+.side-nav-list .side-nav-link.level-2-active,
+.side-nav-list .side-nav-link.level-3-active,
+.side-nav-list .side-nav-link.active {
+    color: #fff;
+    background-color: #494970;
+}
+.side-nav-list .level-2 .side-nav-link:hover:after,
+.side-nav-list .level-2 .side-nav-link.active:after {
+    background: #494970;
+}
+.side-nav-logo-wrap a {
+    padding: 17px 25px;
+}
+
+.side-nav-logo-wrap img {
+    height: 31px;
+}
+.side-nav-logo-wrap {
+    background-color: #ffffff;
+}
+.side-nav-wrap {
+    padding: 5px 0;
+}
+.side-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.side-nav-list .level-2:not(.mm-show):not(.mm-collapsing),
+.side-nav-list .level-3:not(.mm-show):not(.mm-collapsing) {
+    visibility: hidden;
+    height: 0;
+}
+.side-nav-list .side-nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    padding: 10px 25px;
+    font-size: 0.820rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+.side-nav-list .side-nav-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #7a7c9e;
+    font-size: 0.780rem;
+    margin-right: 6px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+[dir="rtl"] .side-nav-list .side-nav-icon {
+    margin-right: 0px;
+    margin-left: 6px;
+}
+.side-nav-list .side-nav-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+.side-nav-list .side-nav-link:hover .side-nav-icon {
+    color: #848497;
+}
+.side-nav-list .side-nav-arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    font-size: 80%;
+}
+.side-nav-list .side-nav-arrow::after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+[dir="rtl"] .side-nav-list .side-nav-arrow::after {
+    content: "\f104";
+}
+.side-nav-list [aria-expanded="true"] .side-nav-arrow::after {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+[dir="rtl"] .side-nav-list [aria-expanded="true"] .side-nav-arrow::after{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.side-nav-list .level-2 .side-nav-link {
+    padding: 10px 25px 10px 54px;
+    position: relative;
+    font-size: 0.8125rem;
+}
+[dir="rtl"] .side-nav-list .level-2 .side-nav-link {
+    padding: 10px 54px 10px 25px;
+}
+.side-nav-list .level-3 .side-nav-link {
+    padding-left: 68px;
+}
+
+.side-nav-list .level-2 .side-nav-link:after {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 6px;
+    border: 1px solid #575979;
+    border-radius: 50%;
+    top: calc(50% - 3px);
+    left: 40px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.side-nav-list .level-3 .side-nav-link:after {
+    left: 54px;
+}
+[dir="rtl"] .side-nav-list .level-2 .side-nav-link:after{
+    left: 0px;
+    right: 40px;
+}
+[dir="rtl"] .side-nav-list .level-3 .side-nav-link:after {
+    right: 54px;
+}
+
+
+@media (min-width: 1200px) {
+    .sidebar.left {
+        left: 0px;
+    }
+    [dir="rtl"] .sidebar.left {
+        left: auto;
+        right: 0;
+    }
+    .side-menu-closed .sidebar.left{
+        left: -265px;
+    }
+    [dir="rtl"] .side-menu-closed .sidebar.left{
+        left: auto;
+        right: -265px;
+    }
+}
