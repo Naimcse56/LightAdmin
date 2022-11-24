@@ -7,84 +7,476 @@
     <title>Light Admin || Hunter</title>
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/sass.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 <body>
-    <div class="main-wrapper">
-        <!-- NAVBAR -->
-        <div class="sidebar-wrap">
-            <div class="sidebar left main-scrollbar">
-                <div class="side-nav-logo-wrap">
-                    <a href="#" class="d-block text-left">
-                        <img class="mw-100" src="assets/img/spondonit-logo-230.png" class="brand-icon" alt="">
-                    </a>
-                </div>
-                <div class="side-nav-wrap">
-                    <ul class="side-nav-list" id="main-menu" data-toggle="side-menu">
-                        <li class="side-nav-item">
-                            <a href="#" class="side-nav-link">
-                                <i class="fas fa-home side-nav-icon"></i>
-                                <span class="side-nav-text">Dashboard</span>
-                            </a>
-                        </li>
-                        <li class="side-nav-item">
-                            <a href="#" class="side-nav-link">
-                                <i class="fa fa-cart-plus side-nav-icon"></i>
-                                <span class="side-nav-text">Cart</span>
-                                <span class="badge badge-inline badge bg-success"> new</span>
-                                <span class="side-nav-arrow"></span>
-                            </a>
-                            <ul class="side-nav-list level-2">
-                                <li class="side-nav-item">
-                                    <a href="#" class="side-nav-link ">
-                                    <span class="side-nav-text">POS Manager</span>
-                                    </a>
-                                </li>
-                                <li class="side-nav-item">
-                                    <a href="#" class="side-nav-link">
-                                    <span class="side-nav-text">POS Configuration</span>
-                                    </a>
-                                </li>
-                            </ul>
-                          </li>
-                    </ul>
-                </div>
-            </div>
+    <header class="cd-main-header js-cd-main-header">
+        <div class="cd-logo-wrapper">
+          <a href="#0" class="cd-logo"><img src="assets/img/cd-logos.svg" alt="Logo"></a>
         </div>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container-fluid d-flex justify-content-between">
-              <div class="top-left-search d-flex align-items-center">
-                <button class="navbar-toggler navbar-icon" type="button" aria-controls="navbarToggleExternalContent">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <form class="" role="search">
-                    <input class="form-control form-control-sm search-box" type="text" placeholder="Search" aria-label="Search">
-                </form>
-              </div>
-              <div class="top-right-corner">
-                <!-- <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;"> -->
-                    <div class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Link
-                      </a>
-                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarScrollingDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </div>
-                  <!-- </ul> -->
-              </div>
-            </div>
+        
+        <div class="cd-search js-cd-search">
+          <form>
+            <input class="reset" type="search" placeholder="Search...">
+          </form>
+        </div>
+      
+        <button class="reset cd-nav-trigger js-cd-nav-trigger" aria-label="Toggle menu"><span></span></button>
+      
+        <ul class="cd-nav__list js-cd-nav__list">
+          <li class="cd-nav__item"><a href="#0">Tour</a></li>
+          <li class="cd-nav__item"><a href="#0">Support</a></li>
+          <li class="cd-nav__item cd-nav__item--has-children cd-nav__item--account js-cd-item--has-children">
+            <a href="#0">
+              <img src="assets/img/cd-avatar.svg" alt="avatar">
+              <span>Account</span>
+            </a>
+        
+            <ul class="cd-nav__sub-list">
+              <li class="cd-nav__sub-item"><a href="#0">My Account</a></li>
+              <li class="cd-nav__sub-item"><a href="#0">Edit Account</a></li>
+              <li class="cd-nav__sub-item"><a href="#0">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </header> <!-- .cd-main-header -->
+      
+      <main class="cd-main-content">
+        <nav class="cd-side-nav js-cd-side-nav">
+          <ul class="cd-side__list js-cd-side__list">
+            <li class="cd-side__label"><span>Main</span></li>
+            <li class="cd-side__item cd-side__item--has-children cd-side__item--overview js-cd-item--has-children">
+              <a href="#0">Overview<span class="cd-count">3</span></a>
+              
+              <ul class="cd-side__sub-list">
+                <li class="cd-side__sub-item"><a href="#0">All Data</a></li>
+                <li class="cd-side__sub-item"><a href="#0">Category 1</a></li>
+                <li class="cd-side__sub-item"><a href="#0">Category 2</a></li>
+              </ul>
+            </li>
+    
+            <li class="cd-side__item cd-side__item--has-children cd-side__item--notifications cd-side__item--selected js-cd-item--has-children">
+              <a href="#0">Notifications</a>
+              
+              <ul class="cd-side__sub-list">
+                <li class="cd-side__sub-item"><a aria-current="page" href="#0">All Notifications</a></li>
+                <li class="cd-side__sub-item"><a href="#0">Friends</a></li>
+                <li class="cd-side__sub-item"><a href="#0">Other</a></li>
+              </ul>
+            </li>
+          </ul>
+        
+          <ul class="cd-side__list js-cd-side__list">
+            <li class="cd-side__label"><span>Secondary</span></li>
+            <li class="cd-side__item cd-side__item--has-children cd-side__item--bookmarks js-cd-item--has-children">
+              <a href="#0">Bookmarks</a>
+              
+              <ul class="cd-side__sub-list">
+                <li class="cd-side__sub-item"><a href="#0">All Bookmarks</a></li>
+                <li class="cd-side__sub-item"><a href="#0">Edit Bookmark</a></li>
+                <li class="cd-side__sub-item"><a href="#0">Import Bookmark</a></li>
+              </ul>
+            </li>
+          </ul>
+        
+          <ul class="cd-side__list js-cd-side__list">
+            <li class="cd-side__label"><span>Action</span></li>
+            <li class="cd-side__btn"><button class="reset" href="#0">+ Button</button></li>
+          </ul>
         </nav>
-        <!-- NAVBAR END -->
-    </div>
+      
+        <div class="cd-content-wrapper">
+            <div class="text-component">
+                <h6 class="mb-0 text-uppercase">Card with images</h6>
+                <hr/>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-4">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="assets/img/01.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="javascript:;" class="btn btn-primary btn-sm">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="assets/img/01.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="javascript:;" class="btn btn-danger btn-sm">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="assets/img/01.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="javascript:;" class="btn btn-success btn-sm">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="assets/img/01.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="javascript:;" class="btn btn-warning">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="mb-0 mt-5 text-uppercase">Card with list group</h6>
+                <hr/>
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="assets/img/02.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="assets/img/02.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="assets/img/02.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                            </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <img src="assets/img/02.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">An item</li>
+                                <li class="list-group-item">A second item</li>
+                                <li class="list-group-item">A third item</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                    <!--end row-->
+                <h6 class="mb-0 mt-5 text-uppercase">Card with Header and footer</h6>
+                <hr/>
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                            Featured
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                            Featured
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-outline-warning btn-sm">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                            Featured
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text text-center">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-outline-success btn-sm">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card">
+                            <div class="card-header">
+                            Featured
+                            </div>
+                            <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text text-right">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end row-->
+                <h6 class="mb-0 mt-5 text-uppercase">Card with Horizontal</h6>
+                <hr/>
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
+                    <div class="col-md-6 col-sm-6 mb-3">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                <img src="assets/img/10.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 mb-3">
+                        <div class="card mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                <img src="assets/img/10.png" class="img-fluid rounded-start" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text text-justify">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--end row-->
+                <h6 class="mb-0 mt-5 text-uppercase">Card with Background and color</h6>
+                <hr/>
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-primary mb-3" >
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-secondary mb-3" >
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Secondary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-success mb-3" >
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Success card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-danger mb-3" >
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Danger card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card text-dark bg-warning mb-3" >
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Warning card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card text-dark bg-info mb-3" >
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Warning card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card text-dark bg-light mb-3" >
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Warning card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-3">
+                        <div class="card text-white bg-dark mb-3" >
+                            <div class="card-header">Header</div>
+                            <div class="card-body">
+                            <h5 class="card-title">Warning card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h6 class="mb-0 mt-5 text-uppercase">Card with Card groups</h6>
+                <hr/>
+                <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 row-cols-xl-3">
+                    <div class="col">
+                        <div class="card-group">
+                            <div class="card">
+                            <img src="assets/img/09.png" class="card-img-top" alt="...">
+                            <div class="card-body bg-light">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                            </div>
+                            <div class="card">
+                            <img src="assets/img/09.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                            </div>
+                            <div class="card">
+                            <img src="assets/img/09.png" class="card-img-top" alt="...">
+                            <div class="card-body  bg-info">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h6 class="mb-0 mt-5 text-uppercase">Card with Grid</h6>
+                <hr/>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                    <div class="card">
+                        <img src="assets/img/14.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="assets/img/14.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="assets/img/14.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col">
+                    <div class="card">
+                        <img src="assets/img/14.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <h6 class="mb-0 mt-5 text-uppercase">Card with Image</h6>
+                <hr/>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col-md-3">
+                        <div class="card bg-dark text-white">
+                            <img src="assets/img/01.png" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text">Last updated 3 mins ago</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .content-wrapper -->
+    </main> <!-- .cd-main-content -->
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="assets/js/menu-aim.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
