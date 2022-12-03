@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Admin || Hunter</title>
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/sass.css">
+</head>
+<body>
+    <div id="mySidebar" class="sidebar-navigation sidebar">
+        <div class="sidebar-logo">
+            <img src="assets/img/d-logo.png" alt="">
+        </div>
+        <ul>
+            <li><a href="index.html" class="side_menu"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a></li>
+            <li><a href="#" class="side_menu"><i class="fa fa-home" aria-hidden="true"></i>Calender</a></li>
+            <li class="selected"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Component <i class='fas fa-angle-down'></i></a>
+                <ul class="multi-menu">
+                    <li><a href="badge.html" class="side_menu">Badges</a></li>
+                    <li class="selected"><a href="card.html" class="side_menu">Card</a></li>
+                    <li><a href="#">Mobile</a>
+                        <ul class="multi-menu">
+                            <li><a href="#" class="side_menu">Social media</a></li>
+                            <li><a href="#" class="side_menu">Security</a></li>
+                            <li><a href="#" class="side_menu">Project</a></li>
+                            <li><a href="#" class="side_menu">Hardware</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="main-content">
+        <nav class="navbar navbar-expand-sm navbar-dark-soft">
+            <div class="container-fluid">
+                <div class="header-left">
+                    <div class="openbtn navbar-brand"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <input class="form-control w-auto search-input" type="text" placeholder="Search" aria-label="Search">
+                    <button class="search-btn"><i class="fas fa-search d-md-block"></i></button>
+                </div>
+                <div class="header-right">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
+                        <li class="nav-item dropdown dropdown-language">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative right-side-icon-head" href="javascript:;" data-bs-toggle="dropdown">
+                                <i class="fa fa-flag" aria-hidden="true"></i>
+                                <span class="span-count">EN</span>
+                            </a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="javascript:;"><i class="fa fa-sign-language"></i><span>German</span></a>
+								<a class="dropdown-item" href="javascript:;"><i class="fa fa-sign-language"></i><span>French</span></a>
+								<a class="dropdown-item" href="javascript:;"><i class="fa fa-sign-language"></i><span>English</span></a>
+								<a class="dropdown-item" href="javascript:;"><i class="fa fa-sign-language"></i><span>Hindi</span></a>
+								<a class="dropdown-item" href="javascript:;"><i class="fa fa-sign-language"></i><span>Chinese</span></a>
+								<a class="dropdown-item" href="javascript:;"><i class="fa fa-sign-language"></i><span>Arabic</span></a>
+							</div>
+						</li>
+
+
+                        <li class="nav-item dropdown dropdown-lg">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative right-side-icon-head" href="javascript:;" data-bs-toggle="dropdown">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span class="span-count">4</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end notification-div">
+                                <a href="javascript:;">
+                                    <div class="msg-header">
+                                        <p class="msg-header-title">4 New</p>
+                                        <p class="msg-header-subtitle">New Messages</p>
+                                    </div>
+                                </a>
+                                <div class="header-notifications-list">
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-envelope-open"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">New Orders</span>
+                                                <span class="msg-time float-end">15 sec ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-envelope-open"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">New Journal Entry</span>
+                                                <span class="msg-time float-end">1 min ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-envelope-open"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">New Joining</span>
+                                                <span class="msg-time float-end">1 hrs ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-envelope-open"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">PDF Download</span>
+                                                <span class="msg-time float-end">2 hrs ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="javascript:;">
+									<div class="text-center msg-footer">View All Notifications</div>
+								</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown dropdown-lg">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret position-relative right-side-icon-head" href="javascript:;" data-bs-toggle="dropdown">
+                                <i class="fa fa-bell" aria-hidden="true"></i>
+                                <span class="span-count">4</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end notification-div">
+                                <a href="javascript:;">
+                                    <div class="msg-header">
+                                        <p class="msg-header-title">4 New</p>
+                                        <p class="msg-header-subtitle">Application Notifications</p>
+                                    </div>
+                                </a>
+                                <div class="header-notifications-list">
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-bell"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">New Orders</span>
+                                                <span class="msg-time float-end">15 sec ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-bell"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">New Journal Entry</span>
+                                                <span class="msg-time float-end">1 min ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-bell"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">New Joining</span>
+                                                <span class="msg-time float-end">1 hrs ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-bell"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">PDF Download</span>
+                                                <span class="msg-time float-end">2 hrs ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-bell"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">Leorem Ipsum 1</span>
+                                                <span class="msg-time float-end">4 hrs ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="notify bg-light-danger text-danger"><i class="fa fa-bell"></i>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <span class="msg-name">Leorem Ipsum 2</span>
+                                                <span class="msg-time float-end">4.5 hrs ago</span>
+                                                <p class="msg-info">You have recived new orders</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <a href="javascript:;">
+									<div class="text-center msg-footer">View All Notifications</div>
+								</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="d-flex user-box align-items-center">
+                                <div class="user-info">
+                                    <p class="user-name mb-0">Jessica Doe</p>
+                                    <p class="designattion mb-0">Available</p>
+                                </div>
+                                <img src="assets/img/01.png" class="user-img" alt="user avatar">
+                            </div>
+                          </a>
+                          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-user-circle" aria-hidden="true"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-cog" aria-hidden="true"></i> Setting</a></li>
+                            <div class="dropdown-divider mb-0"></div>
+                            <li><a class="dropdown-item" href="#"><i class="fa fa-sign-out-alt" aria-hidden="true"></i> Logout</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="breadcrumb-header justify-content-between">
+                <div class="white-bottom-divider">
+                   <h4 class="content-title mb-1 white-text title">Card with Image</h4>
+                </div>
+                <div class="d-flex my-auto">
+                   <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                         <li class="breadcrumb-item"><a href="javascript:void(0);" class="white-text">Component</a></li>
+                         <li class="breadcrumb-item active white-text" aria-current="page">Card</li>
+                      </ol>
+                   </nav>
+                </div>
+             </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="assets/img/02.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title title">Card title</h5>
+                          <p class="card-text justify-with-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          <a href="#" class="btn base-color-background btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="assets/img/06.png" class="card-img-top" alt="...">
+                        <div class="card-body-with-success-background">
+                          <h5 class="card-title title">Card title</h5>
+                          <p class="card-text justify-with-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          <a href="#" class="btn base-color-background btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="assets/img/09.png" class="card-img-top" alt="...">
+                        <div class="card-body-with-gradient-background">
+                          <h5 class="card-title title white-text">Card title</h5>
+                          <p class="card-text justify-with-spacing white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          <a href="#" class="btn base-color-background btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="assets/img/01.png" class="card-img-top" alt="...">
+                        <div class="card-body-with-primary-background">
+                          <h5 class="card-title title white-text">Card title</h5>
+                          <p class="card-text justify-with-spacing white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          <a href="#" class="btn base-color-background btn-sm">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumb-header justify-content-between mt-4">
+                <div class="white-bottom-divider-100">
+                   <h4 class="content-title mb-1 white-text title">Card with Text</h4>
+                </div>
+             </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-body-with-gradient3-background">
+                          <p class="card-text justify-with-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-body-with-gradient2-background">
+                          <p class="card-text justify-with-spacing white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-body-with-gradient-background">
+                          <p class="card-text justify-with-spacing-italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-body-with-success-background">
+                          <p class="card-text justify-with-spacing-italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumb-header justify-content-between mt-4">
+                <div class="white-bottom-divider-100">
+                   <h4 class="content-title mb-1 white-text title">Card with Header</h4>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col mb-3">
+                    <div class="card-header-with-gradient-background purple-text">
+                        Featured
+                    </div>
+                    <div class="card-body-with-gradient-background">
+                        <h5 class="card-title purple-text">Special Title</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="btn btn-sm base-color-background">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card-header-with-success-background">
+                        Featured
+                    </div>
+                    <div class="card-body card-body-with-success-background">
+                        <h5 class="card-title">Special Title</h5>
+                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="btn btn-sm base-color-background">Go somewhere</a>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card-header-with-primary-background white-text">
+                        Featured
+                    </div>
+                    <div class="card-body card-body-with-primary-background">
+                        <h5 class="card-title white-text">Special Title</h5>
+                        <p class="card-text white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href="#" class="btn btn-sm base-color-background">Go somewhere</a>
+                    </div>
+                </div>
+             </div>
+            <div class="breadcrumb-header justify-content-between mt-4">
+                <div class="white-bottom-divider-100">
+                   <h4 class="content-title mb-1 white-text title">Card with Header & Footer</h4>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col mb-3">
+                    <div class="card text-center">
+                        <div class="card-header">
+                          Featured
+                        </div>
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text justify-with-no-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          <a href="#" class="btn base-color-background btn-sm">Go somewhere</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                          2 days ago
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card text-center">
+                        <div class="card-header-with-gradient-background white-text">
+                          Featured
+                        </div>
+                        <div class="card-body card-body-with-gradient-background">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text justify-with-no-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          <a href="#" class="btn btn-warning btn-sm">Go somewhere</a>
+                        </div>
+                        <div class="card-footer card-header-with-gradient-background white-text">
+                          2 days ago
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card text-center">
+                        <div class="card-header-with-success-background">
+                          Featured
+                        </div>
+                        <div class="card-body card-body-with-success-background">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text justify-with-no-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                          <a href="#" class="btn btn-success btn-sm">Go somewhere</a>
+                        </div>
+                        <div class="card-footer text-muted card-header-with-success-background">
+                          2 days ago
+                        </div>
+                    </div>
+                </div>
+             </div>
+             <div class="breadcrumb-header justify-content-between mt-4">
+                <div class="white-bottom-divider-100">
+                   <h4 class="content-title mb-1 white-text title">Card with Text Color</h4>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col">
+                    <div class="card border-primary mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-primary">
+                          <h5 class="card-title">Primary card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-success mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-success">
+                          <h5 class="card-title">Success card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-danger mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-danger">
+                          <h5 class="card-title">Danger card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-warning mb-3">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-warning">
+                          <h5 class="card-title">Danger card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+             
+            <div class="breadcrumb-header justify-content-between mt-4">
+                <div class="white-bottom-divider-100">
+                   <h4 class="content-title mb-1 white-text title">Card with Image</h4>
+                </div>
+             </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="assets/img/02.png" class="card-img-top-second" alt="...">
+                        <div class="card-body">
+                          <p class="card-text justify-with-no-spacing purple-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="assets/img/02.png" class="card-img-top-second" alt="...">
+                        <div class="card-body">
+                          <p class="card-text justify-with-no-spacing indigo-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="assets/img/02.png" class="card-img-top-second" alt="...">
+                        <div class="card-body">
+                          <p class="card-text justify-with-no-spacing danger-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <img src="assets/img/02.png" class="card-img-top-second" alt="...">
+                        <div class="card-body">
+                          <p class="card-text justify-with-no-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+            <div class="breadcrumb-header justify-content-between mt-4">
+                <div class="white-bottom-divider-100">
+                   <h4 class="content-title mb-1 white-text title">Card Group</h4>
+                </div>
+             </div>
+             <div class="row">
+                <div class="col mb-3">
+                    <div class="card-group">
+                        <div class="card">
+                          <img src="assets/img/10.png" class="card-img-top-medium" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="assets/img/10.png" class="card-img-top-medium" alt="...">
+                          <div class="card-body-with-success-background">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            <p class="card-text"><small class="danger-text">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="assets/img/10.png" class="card-img-top-medium" alt="...">
+                          <div class="card-body-with-gradient2-background">
+                            <h5 class="card-title white-text">Card title</h5>
+                            <p class="card-text white-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <p class="card-text"><small class="white-text">Last updated 3 mins ago</small></p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
