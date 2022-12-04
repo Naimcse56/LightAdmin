@@ -18,10 +18,11 @@
         <ul>
             <li><a href="index.html" class="side_menu"><i class="fa fa-home" aria-hidden="true"></i>Dashboard</a></li>
             <li><a href="#" class="side_menu"><i class="fa fa-home" aria-hidden="true"></i>Calender</a></li>
-            <li class="selected"><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Component <i class='fas fa-angle-down'></i></a>
+            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Component <i class='fas fa-angle-down'></i></a>
                 <ul class="multi-menu">
                     <li><a href="badge.html" class="side_menu">Badges</a></li>
-                    <li class="selected"><a href="card.html" class="side_menu">Card</a></li>
+                    <li><a href="card.html" class="side_menu">Card</a></li>
+                    <li><a href="breadcrumbs.html" class="side_menu">Breadcrumbs</a></li>
                     <li><a href="#">Mobile</a>
                         <ul class="multi-menu">
                             <li><a href="#" class="side_menu">Social media</a></li>
@@ -231,304 +232,280 @@
             </div>
         </nav>
         <div class="content">
-            <div class="breadcrumb-header justify-content-between">
+            <div class="breadcrumb-header justify-content-between d-flex justify-content-between">
                 <div class="white-bottom-divider">
-                   <h4 class="content-title mb-1 white-text title">Card with Image</h4>
+                   <h4 class="content-title mb-1 white-text title">Buttons</h4>
                 </div>
                 <div class="d-flex my-auto">
                    <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
                          <li class="breadcrumb-item"><a href="javascript:void(0);" class="white-text">Component</a></li>
-                         <li class="breadcrumb-item active white-text" aria-current="page">Card</li>
+                         <li class="breadcrumb-item active white-text" aria-current="page">Buttons</li>
                       </ol>
                    </nav>
                 </div>
-             </div>
+            </div>
             <div class="row">
                 <div class="col mb-3">
                     <div class="card">
-                        <img src="assets/img/02.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title title">Card title</h5>
-                          <p class="card-text justify-with-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                          <a href="#" class="btn green-color-background btn-sm">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card">
-                        <img src="assets/img/06.png" class="card-img-top" alt="...">
-                        <div class="card-body-with-success-background">
-                          <h5 class="card-title title">Card title</h5>
-                          <p class="card-text justify-with-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                          <a href="#" class="btn green-color-background btn-sm">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card">
-                        <img src="assets/img/09.png" class="card-img-top" alt="...">
-                        <div class="card-body-with-gradient-background">
-                          <h5 class="card-title title white-text">Card title</h5>
-                          <p class="card-text justify-with-spacing white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                          <a href="#" class="btn green-color-background btn-sm">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card">
-                        <img src="assets/img/01.png" class="card-img-top" alt="...">
-                        <div class="card-body-with-primary-background">
-                          <h5 class="card-title title white-text">Card title</h5>
-                          <p class="card-text justify-with-spacing white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                          <a href="#" class="btn green-color-background btn-sm">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="breadcrumb-header justify-content-between mt-4">
-                <div class="white-bottom-divider-100">
-                   <h4 class="content-title mb-1 white-text title">Card with Text</h4>
-                </div>
-             </div>
-            <div class="row">
-                <div class="col mb-3">
-                    <div class="card">
-                        <div class="card-body-with-gradient3-background">
-                          <p class="card-text justify-with-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card">
-                        <div class="card-body-with-gradient2-background">
-                          <p class="card-text justify-with-spacing white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card">
-                        <div class="card-body-with-gradient-background">
-                          <p class="card-text justify-with-spacing-italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card">
-                        <div class="card-body-with-success-background">
-                          <p class="card-text justify-with-spacing-italic">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="breadcrumb-header justify-content-between mt-4">
-                <div class="white-bottom-divider-100">
-                   <h4 class="content-title mb-1 white-text title">Card with Header</h4>
-                </div>
-             </div>
-             <div class="row">
-                <div class="col mb-3">
-                    <div class="card-header-with-gradient-background purple-text">
-                        Featured
-                    </div>
-                    <div class="card-body-with-gradient-background">
-                        <h5 class="card-title purple-text">Special Title</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-sm green-color-background">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card-header-with-success-background">
-                        Featured
-                    </div>
-                    <div class="card-body card-body-with-success-background">
-                        <h5 class="card-title">Special Title</h5>
-                        <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-sm green-color-background">Go somewhere</a>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card-header-with-primary-background white-text">
-                        Featured
-                    </div>
-                    <div class="card-body card-body-with-primary-background">
-                        <h5 class="card-title white-text">Special Title</h5>
-                        <p class="card-text white-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        <a href="#" class="btn btn-sm green-color-background">Go somewhere</a>
-                    </div>
-                </div>
-             </div>
-            <div class="breadcrumb-header justify-content-between mt-4">
-                <div class="white-bottom-divider-100">
-                   <h4 class="content-title mb-1 white-text title">Card with Header & Footer</h4>
-                </div>
-             </div>
-             <div class="row">
-                <div class="col mb-3">
-                    <div class="card text-center">
                         <div class="card-header">
-                          Featured
+                          Buttons
                         </div>
                         <div class="card-body">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text justify-with-no-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                          <a href="#" class="btn green-color-background btn-sm">Go somewhere</a>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-secondary">Secondary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-light">Light</button>
+                            <button type="button" class="btn btn-dark">Dark</button>
+
+                            <button type="button" class="btn btn-link">Link</button>
                         </div>
-                        <div class="card-footer text-muted">
-                          2 days ago
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card text-center">
-                        <div class="card-header-with-gradient-background white-text">
-                          Featured
-                        </div>
-                        <div class="card-body card-body-with-gradient-background">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text justify-with-no-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                          <a href="#" class="btn ignito-color-background btn-sm">Go somewhere</a>
-                        </div>
-                        <div class="card-footer card-header-with-gradient-background white-text">
-                          2 days ago
-                        </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card text-center">
-                        <div class="card-header-with-success-background">
-                          Featured
-                        </div>
-                        <div class="card-body card-body-with-success-background">
-                          <h5 class="card-title">Special title treatment</h5>
-                          <p class="card-text justify-with-no-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                          <a href="#" class="btn c-color-background btn-sm">Go somewhere</a>
-                        </div>
-                        <div class="card-footer text-muted card-header-with-success-background">
-                          2 days ago
-                        </div>
-                    </div>
-                </div>
-             </div>
-             <div class="breadcrumb-header justify-content-between mt-4">
-                <div class="white-bottom-divider-100">
-                   <h4 class="content-title mb-1 white-text title">Card with Text Color</h4>
-                </div>
-             </div>
-             <div class="row">
-                <div class="col">
-                    <div class="card border-primary mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-primary">
-                          <h5 class="card-title">Primary card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-success mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-success">
-                          <h5 class="card-title">Success card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-danger mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-danger">
-                          <h5 class="card-title">Danger card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card border-warning mb-3">
-                        <div class="card-header">Header</div>
-                        <div class="card-body text-warning">
-                          <h5 class="card-title">Danger card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-             </div>
-             
-            <div class="breadcrumb-header justify-content-between mt-4">
-                <div class="white-bottom-divider-100">
-                   <h4 class="content-title mb-1 white-text title">Card with Image</h4>
-                </div>
-             </div>
-            <div class="row">
-                <div class="col mb-3">
-                    <div class="card">
-                        <img src="assets/img/02.png" class="card-img-top-second" alt="...">
-                        <div class="card-body">
-                          <p class="card-text justify-with-no-spacing purple-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+                        <div class="card-footer"></div>
                     </div>
                 </div>
                 <div class="col mb-3">
                     <div class="card">
-                        <img src="assets/img/02.png" class="card-img-top-second" alt="...">
-                        <div class="card-body">
-                          <p class="card-text justify-with-no-spacing indigo-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card-header">
+                            Outline buttons
                         </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card">
-                        <img src="assets/img/02.png" class="card-img-top-second" alt="...">
                         <div class="card-body">
-                          <p class="card-text justify-with-no-spacing danger-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <button type="button" class="btn btn-outline-primary">Primary</button>
+                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                            <button type="button" class="btn btn-outline-success">Success</button>
+                            <button type="button" class="btn btn-outline-danger">Danger</button>
+                            <button type="button" class="btn btn-outline-warning">Warning</button>
+                            <button type="button" class="btn btn-outline-info">Info</button>
+                            <button type="button" class="btn btn-outline-light">Light</button>
+                            <button type="button" class="btn btn-outline-dark">Dark</button>
                         </div>
-                    </div>
-                </div>
-                <div class="col mb-3">
-                    <div class="card">
-                        <img src="assets/img/02.png" class="card-img-top-second" alt="...">
-                        <div class="card-body">
-                          <p class="card-text justify-with-no-spacing">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                        </div>
+                        <div class="card-footer"></div>
                     </div>
                 </div>
             </div>
-             
-            <div class="breadcrumb-header justify-content-between mt-4">
-                <div class="white-bottom-divider-100">
-                   <h4 class="content-title mb-1 white-text title">Card Group</h4>
-                </div>
-             </div>
-             <div class="row">
+            <div class="row">
                 <div class="col mb-3">
-                    <div class="card-group">
-                        <div class="card">
-                          <img src="assets/img/10.png" class="card-img-top-medium" alt="...">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                          </div>
+                    <div class="card">
+                        <div class="card-header">
+                          Round Pill Buttons
                         </div>
-                        <div class="card">
-                          <img src="assets/img/10.png" class="card-img-top-medium" alt="...">
-                          <div class="card-body-with-success-background">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            <p class="card-text"><small class="danger-text">Last updated 3 mins ago</small></p>
-                          </div>
+                        <div class="card-body">
+                            <button type="button" class="btn rounded-pill btn-primary">Primary</button>
+                            <button type="button" class="btn rounded-pill btn-secondary">Secondary</button>
+                            <button type="button" class="btn rounded-pill btn-success">Success</button>
+                            <button type="button" class="btn rounded-pill btn-danger">Danger</button>
+                            <button type="button" class="btn rounded-pill btn-warning">Warning</button>
+                            <button type="button" class="btn rounded-pill btn-info">Info</button>
+                            <button type="button" class="btn rounded-pill btn-light">Light</button>
+                            <button type="button" class="btn rounded-pill btn-dark">Dark</button>
+
+                            <button type="button" class="btn rounded-pill btn-link">Link</button>
                         </div>
-                        <div class="card">
-                          <img src="assets/img/10.png" class="card-img-top-medium" alt="...">
-                          <div class="card-body-with-gradient2-background">
-                            <h5 class="card-title white-text">Card title</h5>
-                            <p class="card-text white-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            <p class="card-text"><small class="white-text">Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
+                        <div class="card-footer"></div>
                     </div>
                 </div>
-             </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Round Pill Outline buttons
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn rounded-pill btn-outline-primary">Primary</button>
+                            <button type="button" class="btn rounded-pill btn-outline-secondary">Secondary</button>
+                            <button type="button" class="btn rounded-pill btn-outline-success">Success</button>
+                            <button type="button" class="btn rounded-pill btn-outline-danger">Danger</button>
+                            <button type="button" class="btn rounded-pill btn-outline-warning">Warning</button>
+                            <button type="button" class="btn rounded-pill btn-outline-info">Info</button>
+                            <button type="button" class="btn rounded-pill btn-outline-light">Light</button>
+                            <button type="button" class="btn rounded-pill btn-outline-dark">Dark</button>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                          Round Pill Buttons Small Size
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn rounded-pill btn-sm btn-primary">Primary</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-secondary">Secondary</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-success">Success</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-danger">Danger</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-warning">Warning</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-info">Info</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-light">Light</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-dark">Dark</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-link">Link</button>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Round Pill Outline buttons Small Size
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn rounded-pill btn-sm btn-outline-primary">Primary</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-outline-secondary">Secondary</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-outline-success">Success</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-outline-danger">Danger</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-outline-warning">Warning</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-outline-info">Info</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-outline-light">Light</button>
+                            <button type="button" class="btn rounded-pill btn-sm btn-outline-dark">Dark</button>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                          Button Group
+                        </div>
+                        <div class="card-body">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-danger"><i class='fas fa-arrow-left'></i> Left</button>
+                                <button type="button" class="btn btn-warning"><i class='fas fa-arrow-alt-circle-up'></i>Middle</button>
+                                <button type="button" class="btn btn-success"><i class='fas fa-arrow-right'></i>Right</button>
+                            </div>
+                            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                <button type="button" class="btn btn-outline-primary">Left</button>
+                                <button type="button" class="btn btn-outline-info">Middle</button>
+                                <button type="button" class="btn btn-outline-danger">Right</button>
+                            </div>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Button Group with Active
+                        </div>
+                        <div class="card-body">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-primary active" aria-current="page">Active link</a>
+                                <a href="#" class="btn c-color-background">Link</a>
+                                <a href="#" class="btn d-color-background">Link</a>
+                            </div>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                          Button With Icon
+                        </div>
+                        <div class="card-body">
+                            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                                <button type="button" class="btn btn-success"><i class='fas fa-check'></i> Save</button>
+                                <button type="button" class="btn btn-warning"><i class='fas fa-edit'></i>Edit</button>
+                                <button type="button" class="btn btn-danger"><i class='fas fa-trash'></i>Delete</button>
+                                <button type="button" class="btn btn-primary"><i class='fas fa-eye'></i>Show</button>
+                                <button type="button" class="btn btn-info"><i class='fas fa-times'></i>Cancel</button>
+                            </div>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Button with Icon
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-success"><i class="fa fa-lock" aria-hidden="true"></i></button>
+                            <button type="button" class="btn btn-warning"><i class='fas fa-envelope'></i></button>
+                            <button type="button" class="btn btn-danger"><i class='fas fa-heart'></i></button>
+                            <button type="button" class="btn btn-primary"><i class='fas fa-wrench'></i></button>
+                            <button type="button" class="btn btn-info"><i class='fas fa-phone'></i></button>
+                            <button type="button" class="btn btn-secondary"><i class='fas fa-user'></i></button>
+                            <button type="button" class="btn danger-color-background"><i class='fas fa-file-archive'></i></button>
+                            <button type="button" class="btn green-color-background"><i class='fas fa-book'></i></button>
+                            <button type="button" class="btn ignito-color-background"><i class='fas fa-camera'></i></button>
+                            <button type="button" class="btn c-color-background"><i class='fas fa-chart-bar'></i></button>
+                            <button type="button" class="btn green-color-background"><i class='fas fa-star'></i></button>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                          Button With Background Color Change
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn c-color-background">Left Side</button>
+                            <button type="button" class="btn e-color-background">Middle Side</button>
+                            <button type="button" class="btn d-color-background">Right Side</button>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Button with Background Color
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn danger-color-background">Left Side</button>
+                            <button type="button" class="btn green-color-background">Middle Side</button>
+                            <button type="button" class="btn base-color-background">Right Side</button>
+                            <button type="button" class="btn ignito-color-background">End Side</button>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                          Button CheckBox
+                        </div>
+                        <div class="card-body">
+                            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                <label class="btn btn-success" for="btncheck1">ON</label>
+                              
+                                <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                <label class="btn btn-danger" for="btncheck2">OFF</label>
+                            </div>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Button Radio
+                        </div>
+                        <div class="card-body">
+                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                <label class="btn btn-success" for="btnradio1">Yes</label>
+                              
+                                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                <label class="btn btn-danger" for="btnradio3">No</label>
+                            </div>
+                        </div>
+                        <div class="card-footer"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
