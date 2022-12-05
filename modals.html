@@ -24,13 +24,19 @@
                     <li><a href="breadcrumbs.html" class="side_menu">Breadcrumbs</a></li>
                     <li><a href="buttons.html" class="side_menu">Buttons</a></li>
                     <li><a href="card.html" class="side_menu">Card</a></li>
-                    <li><a href="forms.html" class="side_menu">Form</a></li>
-                    <li><a href="#">Mobile</a>
+                    <li><a href="modals.html" class="side_menu">Modal</a></li>
+                    <li><a href="progress_bar.html" class="side_menu">Progress Bar</a></li>
+                    <li><a href="scroll_tooltip.html" class="side_menu">Scroll & Tooltip</a></li>
+                    <li><a href="pagination.html" class="side_menu">Pagination</a></li>
+                    <li><a href="table.html" class="side_menu">Table</a></li>
+                    <li><a href="carousel.html" class="side_menu">Carousel</a></li>
+                    <li><a href="accordion.html" class="side_menu">Accordion</a></li>
+                    <li><a href="#">Example</a>
                         <ul class="multi-menu">
-                            <li><a href="#" class="side_menu">Social media</a></li>
-                            <li><a href="#" class="side_menu">Security</a></li>
-                            <li><a href="#" class="side_menu">Project</a></li>
-                            <li><a href="#" class="side_menu">Hardware</a></li>
+                            <li><a href="#" class="side_menu">Sub-Menu 01</a></li>
+                            <li><a href="#" class="side_menu">Sub-Menu 02</a></li>
+                            <li><a href="#" class="side_menu">Sub-Menu 03</a></li>
+                            <li><a href="#" class="side_menu">Sub-Menu 04</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -236,13 +242,13 @@
         <div class="content">
             <div class="breadcrumb-header justify-content-between d-flex justify-content-between">
                 <div class="white-bottom-divider">
-                   <h4 class="content-title mb-1 white-text title">Buttons</h4>
+                   <h4 class="content-title mb-1 white-text title">Modals</h4>
                 </div>
                 <div class="d-flex my-auto">
                    <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
                          <li class="breadcrumb-item"><a href="javascript:void(0);" class="white-text">Component</a></li>
-                         <li class="breadcrumb-item active white-text" aria-current="page">Buttons</li>
+                         <li class="breadcrumb-item active white-text" aria-current="page">Modal</li>
                       </ol>
                    </nav>
                 </div>
@@ -250,41 +256,186 @@
             <div class="row">
                 <div class="col mb-3">
                     <div class="card">
-                        <div class="card-header">
-                          Buttons
-                        </div>
-                        <div class="card-body">
-                            <button type="button" class="btn btn-primary">Primary</button>
-                            <button type="button" class="btn btn-secondary">Secondary</button>
-                            <button type="button" class="btn btn-success">Success</button>
-                            <button type="button" class="btn btn-danger">Danger</button>
-                            <button type="button" class="btn btn-warning">Warning</button>
-                            <button type="button" class="btn btn-info">Info</button>
-                            <button type="button" class="btn btn-light">Light</button>
-                            <button type="button" class="btn btn-dark">Dark</button>
+                        <div class="card-header">Modal Open Button</div>
+                    </div>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Normal Modal</button>
 
-                            <button type="button" class="btn btn-link">Link</button>
-                        </div>
-                        <div class="card-footer"></div>
+                        <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalLarge" data-bs-whatever="@mdo">Large Modal</button>
+    
+                        <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModalExtraLarge" data-bs-whatever="@mdo">Extra Large Modal</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Top Modal</button>
+    
+                        <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="modal" data-bs-target="#staticCenterBackdrop">Center Modal</button>
+    
+                        <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="modal" data-bs-target="#staticBottomBackdrop">Bottom Modal</button>
+    
+                        <button type="button" class="btn btn-primary me-3 mb-3" data-bs-toggle="modal" data-bs-target="#fullScreenModal">Full Screen Modal</button>
+                    </div>
+                    <div class="card-footer">
+                        
                     </div>
                 </div>
                 <div class="col mb-3">
-                    <div class="card">
-                        <div class="card-header">
-                            Outline buttons
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-control">
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <button type="button" class="btn btn-outline-primary">Primary</button>
-                            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                            <button type="button" class="btn btn-outline-success">Success</button>
-                            <button type="button" class="btn btn-outline-danger">Danger</button>
-                            <button type="button" class="btn btn-outline-warning">Warning</button>
-                            <button type="button" class="btn btn-outline-info">Info</button>
-                            <button type="button" class="btn btn-outline-light">Light</button>
-                            <button type="button" class="btn btn-outline-dark">Dark</button>
-                        </div>
-                        <div class="card-footer"></div>
                     </div>
+                    <div class="modal fade" id="exampleModalLarge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-control">
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalExtraLarge" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-control">
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="fullScreenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-control">
+                                <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="staticCenterBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" id="staticBottomBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-bottom">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Understood</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    
                 </div>
             </div>
         </div>

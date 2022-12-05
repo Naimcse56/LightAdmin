@@ -21,16 +21,16 @@
     --teal: #20c997;
     --cyan: #17a2b8;
     --gray-dark: #343a40;
-    --primary: #F77B0B;
+    --primary: #dd7619;
     --secondary: #8f97ab;
     --success: #0abb75;
     --info: #25bcf1;
-    --warning: #ffc519;
-    --danger: #ef486a;
+    --warning: #dda70a;
+    --danger: #d21d42;
     --light: #f2f3f8;
     --dark: #111723;
     --hov-primary: #E56F0E;
-    --soft-danger: rgba(239, 72, 105, 0.671);
+    --soft-danger: rgba(238, 104, 131, 0.568);
     --soft-warning: rgba(255, 197, 25, 0.15);
     --soft-light: rgba(247, 240, 240, 0.664);
     --soft-info: rgba(37, 188, 241, 0.15);
@@ -38,6 +38,8 @@
     --soft-primary: rgba(247, 123, 11, 0.15);
     --soft-secondary: rgba(143, 151, 171, 0.15);
     --soft-dark: rgba(42, 50, 66, 0.15);
+    --base-gradient: linear-gradient(to right, #051937, #23274d, #403462, #604276, #824f87);
+    --base-body-gradient: linear-gradient(to bottom, #ced9eb, #cfe5ee, #daefee, #eaf7f0, #fcfff6);
     --first-gradient: linear-gradient(90deg, rgba(126,77,159,1) 0%, rgba(38,37,37,0.9668242296918768) 100%, rgba(252,176,69,1) 100%);
     --second-gradient: linear-gradient(90deg, rgba(40,107,120,1) 0%, rgba(38,37,37,0.9668242296918768) 100%, rgba(252,176,69,1) 100%);
     --third-gradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(90,15,96,1) 100%, rgba(0,212,255,1) 100%);
@@ -63,7 +65,7 @@ body{
     font-size: 12px;
     font-weight: 400;
     line-height: 1.25;
-    background-color: var(--secondary);
+    background-image: linear-gradient(to right, #051937, #212548, #3b3058, #553c67, #704874);
     max-width: 100vw;
     overflow-x: hidden;
 }
