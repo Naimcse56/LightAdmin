@@ -347,8 +347,15 @@ overflow: auto;
   /* background-image: linear-gradient(to bottom, #b4c6e1, #b7d8e5, #cae7e6, #e3f3ea, #fcfff6); */
   background-image: linear-gradient(to bottom, #ced9eb, #cfe5ee, #daefee, #eaf7f0, #fcfff6);
 }
-.card-header,.card-footer,.modal-header,.modal-footer {
-  /* background-image: linear-gradient(to top, #b4c6e1, #b7d8e5, #cae7e6, #e3f3ea, #fcfff6); */
+.card-header,.modal-header {
+  font-size: 14px;
+  font-weight: 500;
+  background-image: linear-gradient(to bottom, #ced9eb, #cfe5ee, #daefee, #eaf7f0, #fcfff6);
+}
+.card-footer,.modal-footer {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--gray);
   background-image: linear-gradient(to bottom, #ced9eb, #cfe5ee, #daefee, #eaf7f0, #fcfff6);
 }
 .card-img-top {
@@ -448,6 +455,43 @@ overflow: auto;
   font-weight: 600;
 }
 
+/* Text Color */
+.text-primary {
+color: var(--primary) !important;
+}
+.text-secondary {
+color: var(--secondary) !important;
+}
+.text-success {
+color: var(--success) !important;
+}
+.text-danger {
+color: var(--danger) !important;
+}
+.text-warning {
+color: var(--warning) !important;
+}
+.text-info {
+color: var(--info) !important;
+}
+.text-light {
+color: var(--light) !important;
+}
+.text-dark {
+color: var(--dark) !important;
+}
+/* Text Color */
+
+
+/* Loader design */
+.base-spinner {
+  width: 56px;
+  height: 56px;
+  background-image: linear-gradient(to right, #051937, #23274d, #403462, #604276, #824f87);
+  border: groove;
+}
+
+/* Loader design end */
 .rounded-count.danger-text {
   border-radius: 50%;
   margin-left: 10px;
@@ -457,7 +501,7 @@ overflow: auto;
   width: auto;
   max-width: 435px;
   height: 250px;
-  background-image: linear-gradient(to left, #f8acee, #dfa3ea, #c69be4, #ac93dd, #918bd4);
+  background-image: linear-gradient(to left, #f8acee, #dfa3ea, #c69be4, #ac93dd, #887fe9);
   overflow: hidden;
 }
 /* Discount Ribbon */
@@ -499,7 +543,7 @@ span.discount_amount_triangle {
   text-shadow: 1px 1px 5px rgb(0 0 0 / 15%);
   display: block;
   width: 3rem;
-  height: 1.5rem;
+  height: 2.96rem;
   color: white;
   margin: 0em 0.5em 0;
   float: left;
@@ -581,16 +625,32 @@ span.discount_amount_triangle {
   background-image: var(--base-gradient);
   color: var(--white);
 }
+.base-color-background:hover {
+  background-image: linear-gradient(to top, #051937, #23274d, #403462, #604276, #824f87);
+  color: var(--white);
+}
 .danger-color-background {
   background-image: var(--danger-gradient);
+  color: var(--white);
+}
+.danger-color-background:hover {
+  background-image: var(--danger-reverse-gradient);
   color: var(--white);
 }
 .green-color-background {
   background-image: var(--second-gradient);
   color: var(--white);
 }
+.green-color-background:hover {
+  background-image: var(--second-reverse-gradient);
+  color: var(--white);
+}
 .ignito-color-background {
-  background-image: var(--third-gradient);
+  background-image: var(--base-gradient);
+  color: var(--white);
+}
+.ignito-color-background:hover {
+  background-image: var(--base-reverse-gradient);
   color: var(--white);
 }
 .c-color-background {
@@ -613,11 +673,8 @@ span.discount_amount_triangle {
   background-image: var(--second-gradient);
   color: var(--white);
 }
-.green-color-background:hover, .ignito-color-background:hover {
-  color: var(--danger);
-}
 .c-color-background:hover {
-  background-image: var(--third-gradient);
+  background-image: var(--fourth-reverse-gradient);
   color: var(--white);
 }
 .btn-primary {
@@ -731,7 +788,6 @@ span.discount_amount_triangle {
   background-color: var(--danger);
   border-color: var(--primary);
 }
-
 .btn-outline-primary {
   color: var(--dark);
   border-color: var(--primary);
@@ -826,6 +882,7 @@ span.discount_amount_triangle {
   outline: none !important;
   box-shadow: none !important;
 }
+
 input[type=checkbox], input[type=checkbox] {
   outline: none !important;
 }

@@ -39,14 +39,18 @@
     --soft-secondary: rgba(143, 151, 171, 0.15);
     --soft-dark: rgba(42, 50, 66, 0.15);
     --base-gradient: linear-gradient(to right, #051937, #23274d, #403462, #604276, #824f87);
+    --base-reverse-gradient: linear-gradient(to left, #051937, #23274d, #403462, #604276, #824f87);
     --base-body-gradient: linear-gradient(to bottom, #ced9eb, #cfe5ee, #daefee, #eaf7f0, #fcfff6);
     --first-gradient: linear-gradient(90deg, rgba(126,77,159,1) 0%, rgba(38,37,37,0.9668242296918768) 100%, rgba(252,176,69,1) 100%);
-    --second-gradient: linear-gradient(90deg, rgba(40,107,120,1) 0%, rgba(38,37,37,0.9668242296918768) 100%, rgba(252,176,69,1) 100%);
+    --second-gradient: linear-gradient(to right, #8aae98, #75a786, #61a072, #4d985e, #399048);
+    --second-reverse-gradient: linear-gradient(to left, #8aae98, #75a786, #61a072, #4d985e, #399048);
     --third-gradient: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(90,15,96,1) 100%, rgba(0,212,255,1) 100%);
-    --fourth-gradient: linear-gradient(to right, #6943d6, #753dd8, #8136d9, #8d2dda, #9920da);
+    --fourth-gradient: linear-gradient(to right, #8031b3, #9439ae, #a443a9, #b14ea6, #bc5ba3);
+    --fourth-reverse-gradient: linear-gradient(to left, #8031b3, #9439ae, #a443a9, #b14ea6, #bc5ba3);
     --sixth-gradient: linear-gradient(to right, #a558cf, #a25cd6, #9f61de, #9b65e5, #976aec);
     --seventh-gradient: linear-gradient(to right, #58cfb0, #59d6bf, #5ddecf, #62e5de, #6aecec);
-    --danger-gradient: linear-gradient(to right, #fb6290, #fc5684, #fd4a76, #fc3c68, #fb2c5a);
+    --danger-gradient: linear-gradient(to right, #f692a7, #f18097, #ec6d86, #e75a76, #e04465);
+    --danger-reverse-gradient: linear-gradient(to left, #f692a7, #f18097, #ec6d86, #e75a76, #e04465);
     --font-family-sans-serif: Poppins, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 /* Base CSS */

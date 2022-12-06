@@ -26,7 +26,7 @@
                     <li><a href="card.html" class="side_menu">Card</a></li>
                     <li><a href="modals.html" class="side_menu">Modal</a></li>
                     <li><a href="progress_bar.html" class="side_menu">Progress Bar</a></li>
-                    <li><a href="scroll_tooltip.html" class="side_menu">Scroll & Tooltip</a></li>
+                    <li><a href="spinner_tooltip.html" class="side_menu">Spinner & Tooltip</a></li>
                     <li><a href="pagination.html" class="side_menu">Pagination</a></li>
                     <li><a href="table.html" class="side_menu">Table</a></li>
                     <li><a href="carousel.html" class="side_menu">Carousel</a></li>
@@ -242,21 +242,160 @@
         <div class="content">
             <div class="breadcrumb-header justify-content-between d-flex justify-content-between">
                 <div class="white-bottom-divider">
-                   <h4 class="content-title mb-1 white-text title">Buttons</h4>
+                   <h4 class="content-title mb-1 white-text title">Spinner and Tooltip</h4>
                 </div>
                 <div class="d-flex my-auto">
                    <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
                          <li class="breadcrumb-item"><a href="javascript:void(0);" class="white-text">Component</a></li>
-                         <li class="breadcrumb-item active white-text" aria-current="page">Buttons</li>
+                         <li class="breadcrumb-item active white-text" aria-current="page">Spinner and Tooltip</li>
                       </ol>
                    </nav>
                 </div>
             </div>
             <div class="row">
                 <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Growing spinner 
+                        </div>
+                        <div class="card-body">
+                            <div class="spinner-grow text-primary me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-secondary me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-success me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-danger me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-warning me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-info me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-light me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-grow text-dark me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div class="card-footer">Copyright by @ Naimul Islam</div>
+                    </div>
                 </div>
                 <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Spinner / Loader 
+                        </div>
+                        <div class="card-body">
+                            <div class="spinner-border text-primary me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-border text-secondary me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-border text-success me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-border text-danger me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-border text-warning me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-border text-info me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-border text-light me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                              <div class="spinner-border text-dark me-3" role="status">
+                                <span class="visually-hidden">Loading...</span>
+                              </div>
+                        </div>
+                        <div class="card-footer">Copyright by @ Naimul Islam</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Alignment Center
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <div class="spinner-border" role="status">
+                                  <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">Copyright by @ Naimul Islam</div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Loading in Button 
+                        </div>
+                        <div class="card-body">
+                            <button class="btn btn-primary" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                <span class="visually-hidden">Loading...</span>
+                                <i class="fa fa-wine-glass"></i>
+                              </button>
+                              <button class="btn btn-success" type="button" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                            </button>
+                        </div>
+                        <div class="card-footer">Copyright by @ Naimul Islam</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Alignment Center with Big Loader
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <div class="spinner-border base-spinner" role="status">
+                                  <span class="visually-hidden">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">Copyright by @ Naimul Islam</div>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Tooltip 
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary me-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+                                Tooltip on top
+                              </button>
+                              <button type="button" class="btn btn-secondary me-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+                                Tooltip on right
+                              </button>
+                              <button type="button" class="btn btn-warning me-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+                                Tooltip on bottom
+                              </button>
+                              <button type="button" class="btn btn-info me-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+                                Tooltip on left
+                              </button>
+                        </div>
+                        <div class="card-footer">Copyright by @ Naimul Islam</div>
+                    </div>
                 </div>
             </div>
         </div>
