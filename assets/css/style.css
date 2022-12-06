@@ -481,6 +481,107 @@ color: var(--dark) !important;
 }
 /* Text Color */
 
+/* Basic Table Design */
+.basic-table, .basic-table-2, .basic-table-3 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.basic-table td, .basic-table th, .basic-table-2 td, .basic-table-2 th {
+  border: 1px solid rgb(187, 53, 53);
+  padding: 8px;
+}
+
+.basic-table tr:nth-child(even), .basic-table-2 tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+.basic-table tr:hover,.basic-table th:hover {
+  background-image: var(--base-reverse-gradient);
+  color: var(--light);
+}
+
+.basic-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  text-align: left;
+  font-weight: 700;
+  background-image: var(--base-gradient);
+  color: white;
+}
+
+.basic-table tfoot > tr > td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  text-align: left;
+  font-weight: 700;
+  background-image: var(--base-reverse-gradient);
+  color: white;
+}
+
+.basic-table-2 td, .basic-table-2 th, .basic-table-3 td, .basic-table-3 th {
+  border: 1px solid rgb(187, 53, 53);
+  padding: 8px;
+}
+
+.basic-table tr:hover {
+  color: var(--white);
+}
+
+.basic-table-2 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  text-align: left;
+  font-weight: 700;
+  background-image: linear-gradient(to top, #ced9eb, #cfe5ee, #daefee, #eaf7f0, #fcfff6);
+  color: var(--dark);
+}
+
+.basic-table-2 tfoot > tr > td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  text-align: left;
+  font-weight: 700;
+  background-image: linear-gradient(to bottom, #ced9eb, #cfe5ee, #daefee, #eaf7f0, #fcfff6);
+  color: rgb(0, 0, 0);
+}
+
+.basic-table-3 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  text-align: left;
+  font-weight: 700;
+  background-color: var(--white);
+  color: var(--dark);
+}
+
+.basic-table-3 tfoot > tr > td {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  text-align: left;
+  font-weight: 700;
+  background-color: var(--soft-light);
+  color: var(--dark);
+}
+
+@media (max-width: 992px) {
+  .basic-table, .basic-table-2, .basic-table-3 {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    display: block;
+    overflow: auto;
+  }
+}
+
+/* Basic Table Design End */
 
 /* Loader design */
 .base-spinner {
