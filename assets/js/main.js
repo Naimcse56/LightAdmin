@@ -1,5 +1,8 @@
 (function() {
-    
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
   $( document ).ready(function() {
       console.log()
   });
@@ -39,10 +42,94 @@
       $(this).find('>li>a').css('padding-left',result).parent().addClass('selected--last');
     }
   });
-  
+  $(document).ready(function () {
+    if ($('#primary_datatable1').length) {
+      $('#primary_datatable1').dataTable({
+        language: {
+          'paginate': {
+            'previous': '<i class="fa fa-arrow-left"></i>',
+            'next': '<i class="fa fa-arrow-right"></i>'
+          }
+        },
+        oLanguage: {
+            sLengthMenu: "_MENU_",
+         },
+         responsive: true
+      });
+    }
+      
+    if ($('#primary_datatable2').length) {
+      $('#primary_datatable2').DataTable( {
+        language: {
+          'paginate': {
+            'previous': '<i class="fa fa-arrow-left"></i>',
+            'next': '<i class="fa fa-arrow-right"></i>'
+          }
+        },
+        "bDestroy": false,
+        lengthChange: false,
+        dom: 'Bfrtip',
+        buttons: [
+              {
+                  extend: 'copyHtml5',
+                  text: '<i class="fa fa-copy"></i>',
+                  title: "Copy HTML",
+                  titleAttr: 'Copy',
+                  footer: true,
+                  exportOptions: {
+                      columns: ':visible',
+                      columns: ':not(:last-child)',
+                  }
+              },
+              {
+                  extend: 'csvHtml5',
+                  text: '<i class="fa fa-file-excel"></i>',
+                  titleAttr: 'CSV',
+                  footer: true,
+                  exportOptions: {
+                      columns: ':visible',
+                      columns: ':not(:last-child)',
+                  }
+              },
+              {
+                  extend: 'pdfHtml5',
+                  text: '<i class="fa fa-file-pdf"></i>',
+                  title: "PDF",
+                  titleAttr: 'PDF',
+                  exportOptions: {
+                      columns: ':visible',
+                      columns: ':not(:last-child)',
+                  },
+                  orientation: 'landscape',
+                  pageSize: 'A4',
+                  margin: [0, 0, 0, 0],
+                  alignment: 'center',
+                  header: true,
+                  footer: true
+              },
+              {
+                  extend: 'print',
+                  text: '<i class="fa fa-print"></i>',
+                  titleAttr: 'Print',
+                  alignment: 'center',
+                  title: $("#header_title").text(),
+                  footer: true,
+                  exportOptions: {
+                      columns: ':not(:last-child)',
+                  }
+              },
+              {
+                  extend: 'colvis',
+                  text: '<i class="fa fa-columns"></i>',
+                  postfixButtons: ['colvisRestore']
+              }
+          ],
+          columnDefs: [{
+              visible: false
+          }],
+      });
+    }
+  });
 
-  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-    return new bootstrap.Tooltip(tooltipTriggerEl)
-  })
+  
   }());
