@@ -227,7 +227,7 @@ a {
 .form-wizard .form-control {
   font-weight: 300;
   height: auto !important;
-  padding: 15px;
+  padding: 10px;
   color: var(--dark);
   background-color: var(--white);
   border: 1px solid var(--soft-light);
@@ -243,7 +243,7 @@ a {
 .form-wizard .wizard-form-text-label {
   position: absolute;
   left: 10px;
-  top: 16px;
+  top: 10px;
   transition: 0.2s linear all;
 }
 .form-wizard .focus-input .wizard-form-text-label {
