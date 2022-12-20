@@ -7,6 +7,9 @@
     <title>Light Admin || Hunter</title>
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/select2.min.css">
+    <link rel="stylesheet" href="../assets/css/flatpickr.min.css">
+    <link rel="stylesheet" href="../assets/css/summernote-bs4.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/sass.css">
 </head>
@@ -246,162 +249,74 @@
         <div class="content">
             <div class="breadcrumb-header justify-content-between d-flex justify-content-between">
                 <div class="white-bottom-divider">
-                   <h4 class="content-title mb-1 white-text title">Form Wizard</h4>
+                   <h4 class="content-title mb-1 white-text title">Advance Form Element</h4>
                 </div>
                 <div class="d-flex my-auto">
                    <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
                          <li class="breadcrumb-item"><a href="javascript:void(0);" class="white-text">Component</a></li>
-                         <li class="breadcrumb-item active white-text" aria-current="page">Form Wizard</li>
+                         <li class="breadcrumb-item active white-text" aria-current="page">Advance Element</li>
                       </ol>
                    </nav>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="wizard-content-left d-flex justify-content-center align-items-center">
-                        <h1>Create Your Bank Account</h1>
+            <div class="container-body mb-3">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <label class="form-label">Language</label>
+                        <select id="select_single" class="js-states select2 transparent-bg-input form-control">
+                          <option>Java</option>
+                          <option>Javascript</option>
+                          <option>PHP</option>
+                          <option>HTML</option>
+                          <option>CSS</option>
+                          <option>Rubi</option>
+                          <option>Python</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <label class="form-label">Skill</label>
+                        <select id="select_multiple" class="js-states select2 transparent-bg-input form-control" multiple>
+                          <option>Skill 01</option>
+                          <option>Skill 02</option>
+                          <option>Skill 03</option>
+                          <option>Skill 04</option>
+                          <option>Skill 05</option>
+                        </select>
+                    </div>
+                    <div class="col-xl-4 col-md-4 col-sm-12 mb-3">
+                        <div>
+                            <label class="form-label">Quantity</label>
+                        </div>
+                        <div class="input-step">
+                            <button type="button" class="minus">–</button>
+                            <input type="number" class="product-quantity" value="2" min="0" max="100" readonly="">
+                            <button type="button" class="plus">+</button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="form-wizard">
-                        <form action="" method="post" role="form">
-                            <div class="form-wizard-header">
-                                <p class="font-30 weight-600 white-text">Fill all form field to go next step</p>
-                                <ul class="list-unstyled form-wizard-steps clearfix">
-                                    <li class="active weight-600 primary-text"><span>1</span></li>
-                                    <li class="weight-600 primary-text"><span>2</span></li>
-                                    <li class="weight-600 primary-text"><span>3</span></li>
-                                    <li class="weight-600 primary-text"><span>4</span></li>
-                                </ul>
-                            </div>
-                            <fieldset class="wizard-fieldset show">
-                                <h5 class="white-text">Personal Information</h5>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wizard-required form-control-sm" id="fname">
-                                    <label for="fname" class="wizard-form-text-label dark-text">First Name*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wizard-required" id="lname">
-                                    <label for="lname" class="wizard-form-text-label dark-text">Last Name*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group white-text">
-                                    Gender
-                                    <div class="wizard-form-radio white-text">
-                                        <input name="radio-name" id="radio1" type="radio">
-                                        <label for="radio1">Male</label>
-                                    </div>
-                                    <div class="wizard-form-radio white-text">
-                                        <input name="radio-name" id="radio2" type="radio">
-                                        <label for="radio2">Female</label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wizard-required" id="zcode">
-                                    <label for="zcode" class="wizard-form-text-label dark-text">Zip Code*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group clearfix">
-                                    <a href="javascript:;" class="form-wizard-next-btn weight-600">Next</a>
-                                </div>
-                            </fieldset>	
-                            <fieldset class="wizard-fieldset">
-                                <h5 class="white-text">Account Information</h5>
-                                <div class="form-group">
-                                    <input type="email" class="form-control wizard-required" id="email">
-                                    <label for="email" class="wizard-form-text-label dark-text">Email*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wizard-required" id="username">
-                                    <label for="username" class="wizard-form-text-label dark-text">User Name*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control wizard-required" id="pwd">
-                                    <label for="pwd" class="wizard-form-text-label dark-text">Password*</label>
-                                    <div class="wizard-form-error"></div>
-                                    <span class="wizard-password-eye"><i class="far fa-eye"></i></span>
-                                </div>
-                                <div class="form-group">
-                                    <input type="password" class="form-control wizard-required" id="cpwd">
-                                    <label for="cpwd" class="wizard-form-text-label dark-text">Confirm Password*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group clearfix">
-                                    <a href="javascript:;" class="form-wizard-previous-btn weight-600">Previous</a>
-                                    <a href="javascript:;" class="form-wizard-next-btn weight-600">Next</a>
-                                </div>
-                            </fieldset>	
-                            <fieldset class="wizard-fieldset">
-                                <h5 class="white-text">Bank Information</h5>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wizard-required" id="bname">
-                                    <label for="bname" class="wizard-form-text-label dark-text">Bank Name*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wizard-required" id="brname">
-                                    <label for="brname" class="wizard-form-text-label dark-text">Branch Name*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wizard-required" id="acname">
-                                    <label for="acname" class="wizard-form-text-label dark-text">Account Name*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wizard-required" id="acon">
-                                    <label for="acon" class="wizard-form-text-label dark-text">Account Number*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="form-group clearfix">
-                                    <a href="javascript:;" class="form-wizard-previous-btn weight-600">Previous</a>
-                                    <a href="javascript:;" class="form-wizard-next-btn weight-600">Next</a>
-                                </div>
-                            </fieldset>	
-                            <fieldset class="wizard-fieldset">
-                                <h5 class="white-text">Payment Information</h5>
-                                <div class="form-group white-text">
-                                    Payment Type
-                                    <div class="wizard-form-radio">
-                                        <input name="radio-name" id="mastercard" type="radio">
-                                        <label for="mastercard">Master Card</label>
-                                    </div>
-                                    <div class="wizard-form-radio">
-                                        <input name="radio-name" id="visacard" type="radio">
-                                        <label for="visacard">Visa Card</label>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control wizard-required" id="honame">
-                                    <label for="honame" class="wizard-form-text-label dark-text">Holder Name*</label>
-                                    <div class="wizard-form-error"></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control wizard-required" id="cardname">
-                                            <label for="cardname" class="wizard-form-text-label dark-text">Card Number*</label>
-                                            <div class="wizard-form-error"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control wizard-required" id="cvc">
-                                            <label for="cvc" class="wizard-form-text-label dark-text">CVC*</label>
-                                            <div class="wizard-form-error"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group clearfix">
-                                    <a href="javascript:;" class="form-wizard-previous-btn weight-600">Previous</a>
-                                    <a href="javascript:;" class="form-wizard-submit weight-600">Submit</a>
-                                </div>
-                            </fieldset>	
-                        </form>
+            </div>
+            <div class="container-body mb-3">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-sm-12 mb-3">
+                        <label class="form-label">Flatpickr Date</label>
+                        <input type="text" class="form-control flatpickr-input flatpickr-datepicker active" value="Y-m-d" data-provider="flatpickr" data-date-format="d M, Y" readonly="readonly">
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-12 mb-3">
+                        <label class="form-label">Flatpickr Date</label>
+                        <input type="text" class="form-control flatpickr-input flatpickr-timepicker" value="Y-m-d" data-provider="flatpickr" data-date-format="d M, Y" readonly="readonly">
+                    </div>
+                </div>
+            </div>
+            <div class="container-body mb-3">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-sm-12 mb-3">
+                        <label class="form-label">CK Editor</label>
+                        <div id="editor">This is some sample content.</div>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-12 mb-3">
+                        <label class="form-label">Summernote</label>
+                        <textarea class="summernote" name="editordata"></textarea>
                     </div>
                 </div>
             </div>
@@ -409,6 +324,10 @@
     </div>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
+    <script src="../assets/js/ckeditor.js"></script>
+    <script src="../assets/js/summernote-bs4.js"></script>
+    <script src="../assets/js/flatpickr.js"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 </html>

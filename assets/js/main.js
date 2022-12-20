@@ -4,7 +4,30 @@
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
   $( document ).ready(function() {
-      console.log()
+    $('.summernote').summernote({
+        placeholder: 'Write Something',
+        tabsize: 2,
+        height: 250,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+      $(".flatpickr-datepicker").flatpickr({
+          enableTime: false,
+          dateFormat: "Y-m-d",
+      });
+      $(".flatpickr-timepicker").flatpickr({
+        enableTime: true,
+        noCalendar: true,
+        dateFormat: "H:i",
+    
+      });
   });
   $(document).on('click', '.openbtn', function(){
     if (document.getElementById("mySidebar").style.width == "250px") {
@@ -239,5 +262,18 @@
 
         form.classList.add('was-validated')
       }, false)
-    })
+  })
+
+  $(".select2").select2({
+      placeholder: "Select a programming language",
+      allowClear: true
+  });
+  ClassicEditor.create( document.querySelector( '#editor' ) )
+              .then( editor => {
+                      console.log( editor );
+              } )
+              .catch( error => {
+                      console.error( error );
+              } );
+
   }());
